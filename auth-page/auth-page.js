@@ -1,7 +1,7 @@
 import { signInUser, signUpUser } from '../fetch-utils.js';
 
 const signInForm = document.getElementById('sign-in');
-const signUpForm = document.getElementById('sign-out');
+const signUpForm = document.getElementById('sign-up');
 
 signInForm.addEventListener('submit', async (e) => {
     e.preventDefault();
