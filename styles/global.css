@@ -1,35 +1,82 @@
-:root {
-    --background: rgb(224, 234, 247);
-    --header-background: rgb(254, 251, 245);
-    --primary-font: Corbel, 'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', 'DejaVu Sans',
-        'Bitstream Vera Sans', 'Liberation Sans', Verdana, 'Verdana Ref', sans-serif;
+h1 {
+    font-size: 5rem;
+    letter-spacing: 7px;
+    margin: 50px 0 0 50px;
 }
 
-body {
-    font-family: var(--primary-font);
-    background: var(--background);
-    display: grid;
-    grid-template-rows: auto 1fr;
+header h2 {
+    margin-left: 350px;
+    letter-spacing: 3px;
 }
 
-header {
-    position: sticky;
-    top: 0;
-    padding: 15px;
-    height: 80px;
-
+#nav {
     display: flex;
-    align-items: center;
-    gap: 10px;
-
-    background-color: var(--header-background);
-    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    flex-direction: column;
+    align-items: flex-end;
 }
 
-header .logo {
-    height: 100%;
+#bulletin-board {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-content: flex-start;
+    height: 95vh;
+    width: 95vw;
 }
 
-main {
-    padding: 20px;
+.bulletin-post {
+    height: 250px;
+    max-width: 200px;
+    min-width: 100px;
+    background-color: #e4e4f6;
+    border-radius: 20px;
+    padding: 2px 2px;
+    overflow: auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    font-family: 'Karla', sans-serif;
+    margin: 5px;
+}
+
+button {
+    font-family: 'Karla', sans-serif;
+    margin: 0 50px 0 0;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    background-color: white;
+    font-size: 1.2rem;
+    color: rgb(0, 0, 0);
+    border: 2px solid black;
+    letter-spacing: 3px;
+    width: 100px;
+    margin-bottom: 20px;
+    box-shadow: 1px 5px 5px 1px rgba(0, 0, 0, 0.482);
+    text-transform: uppercase;
+}
+
+p,
+h2 {
+    margin: 5px;
+}
+
+.bulletin-post h2 {
+    letter-spacing: 2px;
+    font-family: 'Karla', sans-serif;
+    font-size: 1.7rem;
+    text-transform: capitalize;
+}
+
+h3 {
+    margin-top: 5px;
+    font-family: 'Karla', sans-serif;
+    margin: 0;
+}
+
+button:hover {
+    opacity: 0.5;
+    cursor: pointer;
 }

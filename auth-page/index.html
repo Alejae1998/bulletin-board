@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- metadata -->
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+        <!-- title and favicon -->
+        <title>Web App</title>
+        <link rel="icon" type="image/x-icon" href="assets/alchemy-favicon.png" />
+
+        <!-- js -->
+        <script
+            defer
+            src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@1.35.7/dist/umd/supabase.min.js"
+        ></script>
+        <script type="module" src="auth-page.js"></script>
+
+        <!-- fonts -->
+        <!-- see https://fonts.google.com/ -->
+
+        <!-- css -->
+        <link
+            href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="../styles/reset.css" />
+        <link rel="stylesheet" href="../styles/global.css" />
+        <link rel="stylesheet" href="../styles/styles.css" />
+        <link rel="stylesheet" href="auth.css" />
+        <!-- add link for page specific css -->
+    </head>
+
+    <body>
+        <header>
+            <h1>Motivational Bulletin-Board Authentication</h1>
+        </header>
+        <main>
+            <div>
+                <h1>sign in</h1>
+                <form id="sign-in">
+                    <label for="email">email</label>
+                    <input type="email" name="email" id="email-signin" />
+                    <label for="password">password</label>
+                    <input type="password" name="password" id="password-signin">
+                    <button>sign in</button>
+                </form>
+            </div>
+            <div>
+            <h1>sign up</h1>
+                <form id="sign-up">
+                    <label for="email">email</label>
+                    <input type="email" name="email" id="email-signup" />
+                    <label for="password">password</label>
+                    <input type="password" name="password" id="password-signup">
+                    <button>sign up</button>
+                </form>
+            </div>
+        </main>
+    
+
+
+
+
+
+    </body>
+</html>
+
