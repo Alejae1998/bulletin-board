@@ -26,7 +26,6 @@ export async function signInUser(email, password) {
     }
 }
 
-
 export async function fetchPosts() {
     const response = await client.from('post').select('*');
     return response.data;
@@ -39,11 +38,13 @@ export async function logout() {
 
 export async function checkAuth() {
     const user = await getUser();
-    if (!user) location.replace('/auth');
+    if (!user) location.replace('/auth-page');
 }
 
-
-export async function redirectIfLoggedIn() {}
+export async function redirectIfLoggedIn() {
+    const user = getUser();
+    if (user) location.replace('./auth-page');
+}
 
 export async function createPost(post) {
     const response = await client.from('post').insert(post);
