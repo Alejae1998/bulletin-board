@@ -4,7 +4,7 @@ export function renderPosts(post) {
     const p = document.createElement('p');
     const h3 = document.createElement('h3');
 
-    div.classList.add('bulletin-board');
+    div.classList.add('bulletin-post');
 
     h2.textContent = post.title;
     p.textContent = post.description;
