@@ -1,11 +1,8 @@
 /* Imports */
-
+import { getUser, fetchPosts } from './fetch-utils.js';
 /* Get DOM Elements */
 
-/* State */
+const createBtn = document.getElementById('create');
+const loginBtn = document.getElementById('auth-btn');
 
-/* Events */
-
-/* Display Functions */
-
-// (don't forget to call any display functions you want to run on page load!)
+async function loadData() {}
