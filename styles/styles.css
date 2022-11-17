@@ -61,15 +61,17 @@ header {
     align-items: stretch;
     background-color: #e4e4f6;
     color: black;
-    height: var(--header-height);
+    height: 500px;
     box-shadow: var(--shadow);
     padding: 15px;
     margin-bottom: 30px;
 }
 
-h2 {
+header h2 {
     font-size: 1.2rem;
     font-weight: bold;
+    padding-right: 50px;
+    padding-left: 500px;
 }
 
 .gutter-right {
