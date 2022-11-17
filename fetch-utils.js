@@ -34,4 +34,8 @@ export async function fetchPosts() {
     return response.data;
 }
 
-export async function logout() {}
+export async function logout() {
+    await client.auth.signOut();
+    return (window.location.href = '/');
+}
+
