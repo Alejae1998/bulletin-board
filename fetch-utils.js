@@ -27,11 +27,11 @@ export async function signInUser(email, password) {
     }
 }
 
-export async function redirectIfLoggedIn() {
+export async function redirectIfLoggedIn() {}
+
+export async function fetchPosts() {
     const response = await client.from('post').select('*');
     return response.data;
 }
-
-export async function fetchPosts() {}
 
 export async function logout() {}
