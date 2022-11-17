@@ -6,26 +6,23 @@ body {
     --color3: white;
     --color4: white;
     --color5: white;
-    --header-height: 350px;
+    --header-height: 280px;
     --shadow: 0px 10px 20px -12px rgba(0, 0, 0, 0.45);
     --gutter: 30px;
-    --footer-height: 25px;
+    /* --footer-height: 25px; */
 
-    font-family: 'Chicle', cursive;
-
-    background-color: white;
-    min-width: 645px;
+    font-family: 'Montserrat Subrayada', sans-serif;
+    background-color: var(--color2);
 }
 header {
     display: flex;
-    justify-content: flex-start;
-    flex-direction: column;
-    align-items: strech;
-    background-color: white;
-    color: black;
-    padding: 15px;
-    margin-bottom: 35px;
-    cursor: pointer;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    /* background-color: var(--color3); */
+    background-color: rgb(164, 250, 222);
+    height: var(--header-height);
+    box-shadow: var(--shadow);
 }
 
 main {
@@ -33,11 +30,12 @@ main {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-bottom: calc(var(--footer-height));
+    margin-bottom: 100px;
 }
 
 section {
     background-color: var(--color5);
+    width: 1000px;
     max-width: 80%;
     display: flex;
     flex-direction: column;
@@ -53,4 +51,42 @@ section {
 h2 {
     fotn-size: 1.2rem;
     fotn-weight: bold;
+}
+#logout {
+    position: fixed;
+    right: 20px;
+    top: 20px;
+    color: black;
+    background-color: white;
+    border: none;
+    padding: 5px;
+    border-radius: 5px;
+    font-weight: 900;
+    box-shadow: 1px 1px 10px -1px rgba(0, 0, 0, 0.638);
+    font-size: 1rem;
+}
+
+#logout:hover {
+    opacity: 0.5;
+    cursor: pointer;
+}
+.auth-main {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+}
+
+.auth-container {
+    margin: 10px;
+}
+
+.auth-container form {
+    display: flex;
+    flex-direction: column;
+}
+
+.auth-container button {
+    margin: 30px 70px;
 }
